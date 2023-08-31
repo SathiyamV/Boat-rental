@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boat Rental</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/logo.svg">
+    <script
+      src="https://kit.fontawesome.com/fe17887fbc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 155 34"
+                class="logo-img"
+              >
+                <path
+                  fill="white"
+                  d="M28.14.38c-1.626.36-3.229.819-4.8 1.372a42.313 42.313 0 0 0-4.525 1.854A31.285 31.285 0 0 0 15 5.766a31.283 31.283 0 0 0-3.83-2.16 42.316 42.316 0 0 0-4.522-1.855A41.4 41.4 0 0 0 1.86.38L0 0v18.588a15 15 0 1 0 30 0V0l-1.86.38ZM15 9.65c2.807 2.352 4.226 5.028 4.214 7.93a4.214 4.214 0 1 1-8.428 0c-.01-2.928 1.408-5.59 4.214-7.93Zm11.896 8.938a11.899 11.899 0 1 1-23.798 0v-14.7a38.16 38.16 0 0 1 9.298 3.91 16.116 16.116 0 0 0-2.813 3.285 11.915 11.915 0 0 0-1.903 6.491 7.32 7.32 0 1 0 14.64 0 11.919 11.919 0 0 0-1.904-6.494A16.113 16.113 0 0 0 17.6 7.79a35.685 35.685 0 0 1 6.704-3.093c.982-.341 1.87-.612 2.59-.81l.002 14.701ZM54.052 9.3H48.82V24h-3.228V9.3H40.36V6.648h13.692V9.3Zm2.385 4.524c.384-.736.84-1.312 1.368-1.728.528-.424 1.152-.636 1.872-.636.568 0 1.024.124 1.368.372l-.192 2.22a.588.588 0 0 1-.18.312.478.478 0 0 1-.3.084c-.12 0-.3-.02-.54-.06-.232-.04-.46-.06-.684-.06-.328 0-.62.048-.876.144a2.218 2.218 0 0 0-.696.42c-.2.176-.38.392-.54.648a6.88 6.88 0 0 0-.432.876V24H53.64V11.688h1.74c.304 0 .516.056.636.168.12.104.2.296.24.576l.18 1.392Zm9.429-2.136V24H62.89V11.688h2.976Zm.408-3.588c0 .256-.052.496-.156.72-.104.224-.244.42-.42.588a1.99 1.99 0 0 1-.6.408c-.232.096-.48.144-.744.144-.256 0-.5-.048-.732-.144a2.036 2.036 0 0 1-.588-.408 2.036 2.036 0 0 1-.408-.588 1.808 1.808 0 0 1-.144-.72c0-.264.048-.512.144-.744a1.99 1.99 0 0 1 .408-.6c.168-.168.364-.3.588-.396a1.77 1.77 0 0 1 .732-.156c.264 0 .512.052.744.156.232.096.432.228.6.396.176.168.316.368.42.6.104.232.156.48.156.744Zm5.777 12.708c.336.408.7.696 1.092.864.4.168.832.252 1.296.252.448 0 .852-.084 1.212-.252a2.33 2.33 0 0 0 .912-.768c.256-.344.452-.776.588-1.296.136-.528.204-1.148.204-1.86 0-.72-.06-1.328-.18-1.824-.112-.504-.276-.912-.492-1.224a1.957 1.957 0 0 0-.792-.684 2.411 2.411 0 0 0-1.044-.216c-.616 0-1.14.132-1.572.396-.432.256-.84.62-1.224 1.092v5.52Zm-.156-7.44a6.422 6.422 0 0 1 1.716-1.38c.64-.352 1.392-.528 2.256-.528a4 4 0 0 1 1.836.42c.56.28 1.04.688 1.44 1.224.408.528.72 1.184.936 1.968.224.776.336 1.668.336 2.676 0 .92-.124 1.772-.372 2.556a6.19 6.19 0 0 1-1.068 2.04 4.894 4.894 0 0 1-1.668 1.356c-.648.32-1.376.48-2.184.48-.688 0-1.276-.104-1.764-.312a4.402 4.402 0 0 1-1.308-.888v5.04h-2.964V11.688H70.9c.384 0 .636.18.756.54l.24 1.14Zm14.39-4.152v5.136h6.504v2.58h-6.505V24h-3.24V6.648H93.99v2.568h-7.705Zm13.134 2.472V24h-2.976V11.688h2.976Zm.408-3.588c0 .256-.052.496-.156.72-.104.224-.244.42-.42.588a1.99 1.99 0 0 1-.6.408c-.232.096-.48.144-.744.144-.256 0-.5-.048-.732-.144a2.036 2.036 0 0 1-.588-.408 2.036 2.036 0 0 1-.408-.588 1.808 1.808 0 0 1-.144-.72c0-.264.048-.512.144-.744a1.99 1.99 0 0 1 .408-.6c.168-.168.364-.3.588-.396a1.77 1.77 0 0 1 .732-.156c.264 0 .512.052.744.156.232.096.432.228.6.396.176.168.316.368.42.6.104.232.156.48.156.744Zm5.586 5.1c.248-.248.508-.476.78-.684a4.79 4.79 0 0 1 1.872-.888 4.744 4.744 0 0 1 1.152-.132c.672 0 1.268.116 1.788.348.52.224.952.544 1.296.96.352.408.616.9.792 1.476.184.568.276 1.196.276 1.884V24h-2.964v-7.836c0-.752-.172-1.332-.516-1.74-.344-.416-.868-.624-1.572-.624-.512 0-.992.116-1.44.348a5.16 5.16 0 0 0-1.272.948V24h-2.964V11.688h1.812c.384 0 .636.18.756.54l.204.972Zm18.702 1.632c-.336-.408-.704-.696-1.104-.864a3.195 3.195 0 0 0-1.272-.252c-.448 0-.852.084-1.212.252-.36.168-.668.424-.924.768-.256.336-.452.768-.588 1.296-.136.52-.204 1.136-.204 1.848 0 .72.056 1.332.168 1.836.12.496.288.904.504 1.224.216.312.48.54.792.684.312.136.66.204 1.044.204.616 0 1.14-.128 1.572-.384.432-.256.84-.62 1.224-1.092v-5.52Zm2.964-8.664V24h-1.812c-.392 0-.64-.18-.744-.54l-.252-1.188a6.182 6.182 0 0 1-1.716 1.38c-.64.352-1.388.528-2.244.528-.672 0-1.288-.14-1.848-.42a4.196 4.196 0 0 1-1.452-1.212c-.4-.536-.712-1.196-.936-1.98-.216-.784-.324-1.68-.324-2.688 0-.912.124-1.76.372-2.544a6.19 6.19 0 0 1 1.068-2.04 4.918 4.918 0 0 1 1.668-1.344c.648-.328 1.376-.492 2.184-.492.688 0 1.276.108 1.764.324a4.52 4.52 0 0 1 1.308.876V6.168h2.964Zm11.058 10.26c0-.384-.056-.744-.168-1.08a2.498 2.498 0 0 0-.48-.9 2.192 2.192 0 0 0-.828-.6c-.328-.152-.712-.228-1.152-.228-.856 0-1.532.244-2.028.732-.488.488-.8 1.18-.936 2.076h5.592Zm-5.652 1.788c.048.632.16 1.18.336 1.644.176.456.408.836.696 1.14.288.296.628.52 1.02.672.4.144.84.216 1.32.216.48 0 .892-.056 1.236-.168a5.52 5.52 0 0 0 .912-.372 15.1 15.1 0 0 0 .684-.372c.2-.112.392-.168.576-.168.248 0 .432.092.552.276l.852 1.08a5.072 5.072 0 0 1-1.104.972 6.562 6.562 0 0 1-1.284.624c-.44.152-.892.26-1.356.324a9.58 9.58 0 0 1-1.332.096 6.66 6.66 0 0 1-2.388-.42 5.453 5.453 0 0 1-1.92-1.26c-.544-.56-.972-1.248-1.284-2.064-.312-.824-.468-1.776-.468-2.856 0-.84.136-1.628.408-2.364a5.672 5.672 0 0 1 1.164-1.932 5.546 5.546 0 0 1 1.86-1.308c.736-.32 1.564-.48 2.484-.48.776 0 1.492.124 2.148.372.656.248 1.22.612 1.692 1.092.472.472.84 1.056 1.104 1.752.272.688.408 1.476.408 2.364 0 .448-.048.752-.144.912-.096.152-.28.228-.552.228h-7.62Zm13.536-4.392c.384-.736.84-1.312 1.368-1.728.528-.424 1.152-.636 1.872-.636.568 0 1.024.124 1.368.372l-.192 2.22a.588.588 0 0 1-.18.312.478.478 0 0 1-.3.084c-.12 0-.3-.02-.54-.06-.232-.04-.46-.06-.684-.06-.328 0-.62.048-.876.144a2.218 2.218 0 0 0-.696.42c-.2.176-.38.392-.54.648a6.88 6.88 0 0 0-.432.876V24h-2.964V11.688h1.74c.304 0 .516.056.636.168.12.104.2.296.24.576l.18 1.392Zm4.988 8.544c0-.248.044-.484.132-.708.096-.224.224-.416.384-.576.16-.16.352-.288.576-.384.224-.096.464-.144.72-.144.256 0 .492.048.708.144.224.096.416.224.576.384a1.779 1.779 0 0 1 .54 1.284c0 .256-.048.496-.144.72a1.755 1.755 0 0 1-.396.564c-.16.16-.352.284-.576.372a1.724 1.724 0 0 1-.708.144c-.256 0-.496-.048-.72-.144a1.664 1.664 0 0 1-.576-.372 1.854 1.854 0 0 1-.384-.564 1.951 1.951 0 0 1-.132-.72Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="nav-hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav-items">
+            <ul class="nav-elements">
+              <li></li>
+              <li>Home</li>
+              <li>Explore</li>
+              <li>Pricing</li>
+              <li>Help</li>
+              <li><a href="#" class="nav-btn">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="header-form">
+        <form action="#">
+          <span class="form-span">Enjoy your trip</span>
+          <h1>
+            DISCOVER THE <br />
+            NEW WORLD
+          </h1>
+          <p>
+            Compare prices from 200+ booking sites to help you find the lowest
+            price on the right hotel for you.
+          </p>
+          <div class="form-input-box">
+            <div class="form-svg">
+              <svg
+                class="form-inline-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5V10.5Z"
+                  stroke="gray"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M19.5 10.5C19.5 17.642 12 21.75 12 21.75C12 21.75 4.5 17.642 4.5 10.5C4.5 8.51088 5.29018 6.60322 6.6967 5.1967C8.10322 3.79018 10.0109 3 12 3C13.9891 3 15.8968 3.79018 17.3033 5.1967C18.7098 6.60322 19.5 8.51088 19.5 10.5V10.5Z"
+                  stroke="gray"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="form-input-box">
+            <div class="form-svg">
+              <svg
+                class="form-inline-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.75 3V5.25M17.25 3V5.25M3 18.75V7.5C3 6.90326 3.23705 6.33097 3.65901 5.90901C4.08097 5.48705 4.65326 5.25 5.25 5.25H18.75C19.3467 5.25 19.919 5.48705 20.341 5.90901C20.7629 6.33097 21 6.90326 21 7.5V18.75M3 18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75M3 18.75V11.25C3 10.6533 3.23705 10.081 3.65901 9.65901C4.08097 9.23705 4.65326 9 5.25 9H18.75C19.3467 9 19.919 9.23705 20.341 9.65901C20.7629 10.081 21 10.6533 21 11.25V18.75M12 12.75H12.008V12.758H12V12.75ZM12 15H12.008V15.008H12V15ZM12 17.25H12.008V17.258H12V17.25ZM9.75 15H9.758V15.008H9.75V15ZM9.75 17.25H9.758V17.258H9.75V17.25ZM7.5 15H7.508V15.008H7.5V15ZM7.5 17.25H7.508V17.258H7.5V17.25ZM14.25 12.75H14.258V12.758H14.25V12.75ZM14.25 15H14.258V15.008H14.25V15ZM14.25 17.25H14.258V17.258H14.25V17.25ZM16.5 12.75H16.508V12.758H16.5V12.75ZM16.5 15H16.508V15.008H16.5V15Z"
+                  stroke="gray"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Departure"
+              onfocus="(this.type='date')"
+            />
+          </div>
+          <div class="form-input-box">
+            <div class="form-svg">
+              <svg
+                class="form-inline-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.75 3V5.25M17.25 3V5.25M3 18.75V7.5C3 6.90326 3.23705 6.33097 3.65901 5.90901C4.08097 5.48705 4.65326 5.25 5.25 5.25H18.75C19.3467 5.25 19.919 5.48705 20.341 5.90901C20.7629 6.33097 21 6.90326 21 7.5V18.75M3 18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75M3 18.75V11.25C3 10.6533 3.23705 10.081 3.65901 9.65901C4.08097 9.23705 4.65326 9 5.25 9H18.75C19.3467 9 19.919 9.23705 20.341 9.65901C20.7629 10.081 21 10.6533 21 11.25V18.75M12 12.75H12.008V12.758H12V12.75ZM12 15H12.008V15.008H12V15ZM12 17.25H12.008V17.258H12V17.25ZM9.75 15H9.758V15.008H9.75V15ZM9.75 17.25H9.758V17.258H9.75V17.25ZM7.5 15H7.508V15.008H7.5V15ZM7.5 17.25H7.508V17.258H7.5V17.25ZM14.25 12.75H14.258V12.758H14.25V12.75ZM14.25 15H14.258V15.008H14.25V15ZM14.25 17.25H14.258V17.258H14.25V17.25ZM16.5 12.75H16.508V12.758H16.5V12.75ZM16.5 15H16.508V15.008H16.5V15Z"
+                  stroke="gray"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Return"
+              onfocus="(this.type='date')"
+            />
+          </div>
+          <div class="form-btn-div">
+            <a href="#" class="form-btn">SUBMIT</a>
+          </div>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="container-1">
+        <h2>Top Destinations For Boat Rentals</h2>
+        <p>Unsatiable It Considered Invitation He Traveling Insensible.</p>
+        <div class="container-1-images">
+          <div class="container-1-card">
+            <img src="/images/miami.webp" alt="miami" />
+            <h3>Miami</h3>
+            <h4>Long Island city</h4>
+          </div>
+          <div class="container-1-card">
+            <img src="/images/longIsland.webp" alt="miami" />
+            <h3>Seattle Beach</h3>
+            <h4>Long Island city</h4>
+          </div>
+          <div class="container-1-card">
+            <img src="/images/dubai.webp" alt="miami" />
+            <h3>Atlantis Dubai</h3>
+            <h4>Long Island city</h4>
+          </div>
+          <div class="container-1-card">
+            <img src="/images/australia.webp" alt="miami" />
+            <h3>Australian Beach</h3>
+            <h4>Long Island city</h4>
+          </div>
+        </div>
+      </section>
+      <section class="container-2">
+        <div class="container-2-div">
+          <div class="container-2-head">
+            <h1>How To Rent A Boat</h1>
+            <p>Unsatiable It Considered Invitation He Traveling Insensible.</p>
+          </div>
+
+          <div class="container-2-cards">
+            <div class="container-2-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 74 116"
+                class="container-2-svg"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M17.243 37.344L16 38.152a5.981 5.981 0 00-1.778 8.25l12.054 18.657a5.987 5.987 0 008.25 1.768l1.242-.803a5.987 5.987 0 001.773-8.25L25.493 39.122a5.987 5.987 0 00-8.25-1.778v0z"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M5.966 44.629l-1.243.808a5.982 5.982 0 00-1.773 8.25l12.074 18.652a5.987 5.987 0 008.25 1.773l1.242-.803a5.982 5.982 0 001.774-8.25L14.236 46.402a5.981 5.981 0 00-8.27-1.773v0zM53.516 53.161l-.096-44.34A6.84 6.84 0 0046.6 2h-1.44a6.84 6.84 0 00-6.82 6.82v25.497"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M28.506 30.068l-1.242.798a5.987 5.987 0 00-1.779 8.25L34.842 53.6a5.981 5.981 0 008.25 1.778l1.242-.803a5.98 5.98 0 001.773-8.25l-9.36-14.484a5.982 5.982 0 00-8.24-1.773v0zM35.797 93.683C37.045 81.276 53.63 75.76 53.63 75.76l1.37-5.77-7.846-5.445c-3.082-2.526-3.466-6.714-1.415-10.387 1.612-2.875 4.94-1.718 4.94-1.718s14.702 3.607 17.895 5.709c6.82 4.48 1.814 21.582-.955 26.816-2.768 5.233-10.574 21.339-10.574 21.339l-1.697 7.654M2.223 52.09l1.854 31.115 10.533 23.082"
+                ></path>
+              </svg>
+              <h3>Find the perfect boat</h3>
+              <p>
+                Browse Our 5,000 Designer Dresses And Accessories Online Or At
+                Our Melbourne Warehouse.
+              </p>
+            </div>
+            <div class="container-2-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 74 116"
+                class="container-2-svg"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M17.226 36.97l-1.243.804a5.987 5.987 0 00-1.779 8.252l12.057 18.656a5.983 5.983 0 008.251 1.773l1.243-.803a5.978 5.978 0 001.774-8.246L25.472 38.745a5.978 5.978 0 00-8.246-1.774v0z"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M5.966 44.257l-1.243.798a5.983 5.983 0 00-1.773 8.252l12.056 18.66a5.972 5.972 0 008.247 1.774l1.243-.803a5.978 5.978 0 001.774-8.252L14.218 46.03a5.982 5.982 0 00-8.252-1.773v0zM57.143 53.757l11.046-42.865a6.847 6.847 0 00-4.896-8.318l-1.385-.359a6.852 6.852 0 00-8.322 4.892l-11.41 39.252M23.694 36.945l-8.055-26.048a6.852 6.852 0 014.896-8.323l1.39-.358a6.837 6.837 0 018.317 4.89l11.91 39.253"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M35.805 93.317c1.248-12.41 17.837-17.928 17.837-17.928l1.37-5.77-7.848-5.448c-3.082-2.501-3.466-6.715-1.41-10.389 1.607-2.875 4.942-1.718 4.942-1.718s14.7 3.608 17.878 5.7c6.821 4.487 1.814 21.587-.955 26.822-2.77 5.234-10.576 21.339-10.576 21.339l-1.01 7.246M2.223 51.715l1.854 31.122 10.536 23.092"
+                ></path>
+              </svg>
+              <h3>Select a captain</h3>
+              <p>
+                Find Your Perfect Look Among Thousands Of Fashion Pieces, Here
+                Available For Rent And Purchase
+              </p>
+            </div>
+            <div class="container-2-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 74 114"
+                class="container-2-svg"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M5.774 46.141l-1.182.76A5.695 5.695 0 002.9 54.748l11.466 17.747a5.69 5.69 0 007.838 1.677l1.182-.764a5.69 5.69 0 001.701-7.847l-11.46-17.747a5.695 5.695 0 00-7.853-1.673v0zM57.925 53.474l8.309-35.686a6.511 6.511 0 00-4.652-7.91l-1.322-.346a6.512 6.512 0 00-7.91 4.652l-9 32.591M28.154 49.726L26.818 9.05a6.507 6.507 0 016.007-6.939l1.36-.096a6.507 6.507 0 016.944 6.002l2.22 38.757"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M13.621 47.813l-7.718-26.33a5.997 5.997 0 014.224-7.323l1.216-.327a5.992 5.992 0 017.324 4.224l9.486 31.674M37.582 91.078C38.764 79.3 54.541 74.013 54.541 74.013l1.302-5.473-7.468-5.18c-2.926-2.403-3.291-6.392-1.336-9.886 1.529-2.73 4.695-1.629 4.695-1.629s13.985 3.431 17.008 5.416c6.487 4.267 1.725 20.535-.909 25.513-2.633 4.979-10.067 20.294-10.067 20.294l-1.817 8.03M2.338 53.595l1.639 27.517 10.02 21.956"
+                ></path>
+              </svg>
+              <h3>Many Pickup Locations</h3>
+              <p>
+                Enjoy Wearing It At Your Special Event For A Few Days, Or
+                Purchase It To Make It Part Of Your Wardrobe
+              </p>
+            </div>
+            <div class="container-2-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 74 99"
+                class="container-2-svg"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M62.731 50.17l8.939-29.798a5.882 5.882 0 00-3.573-7.48l-1.164-.408a5.878 5.878 0 00-7.484 3.573l-9.334 26.955M36.228 44.497l1.95-36.714A5.878 5.878 0 0144.117 2h1.233a5.878 5.878 0 015.782 5.944l-1.016 35.055M24.767 49.85l-6.833-36.189a5.644 5.644 0 014.537-6.511l1.159-.209a5.644 5.644 0 016.512 4.532l6.078 32.994M24.715 49.846L11.722 28.682a4.593 4.593 0 00-5.913-2.605l-.899.352a4.584 4.584 0 00-2.605 5.913L12.2 55.867l3.556 21.42 6.164 17.825M38.806 83.278c-.26-10.71 13.297-17.183 13.297-17.183l.825-3.278-11.17-4.141c-2.891-1.806-3.668-5.362-2.305-8.709 1.063-2.605 4.028-1.988 4.028-1.988s16.814 1.845 19.749 3.286c6.29 3.1 3.842 18.212 2.04 22.97-1.801 4.758-8.291 19.318-8.291 19.318v3.387"
+                ></path>
+              </svg>
+              <h3>Satisfied Customers</h3>
+              <p>
+                Simply Pop Your Dress Back In The Free Prepaid Satchel Provided.
+                We Now Handle All The Dry Cleaning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-3">
+        <div class="container-3-title">
+          <div>
+            <h1>Top Boat Rentals</h1>
+            <p>Unsatiable It Considered Invitation He Traveling Insensible.</p>
+          </div>
+          <div>
+            <a href="#">See More</a>
+          </div>
+        </div>
+        <div class="container-3-cards">
+          <div class="container-3-card">
+            <img src="/images/con3img1.webp" />
+            <h3>3 - 8 hours &bull; No Captain</h3>
+            <h4>Perfect set up for Lake Union cruising.</h4>
+            <p>Santa Maria, Milazzo</p>
+            <div class="container-3-price">
+              <p><span>$260</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (12)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con-3-img2.webp" />
+            <h3>4 - 7 hours &bull; No Captain</h3>
+            <h4>Smooth Sailing for Lake Union cruising.</h4>
+            <p>Kraig Pike</p>
+            <div class="container-3-price">
+              <p><span>$230</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (11)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con-3-img3.webp" />
+            <h3>3 - 3 hours &bull; Captain</h3>
+            <h4>Adventurer's Cove Lake Union cruising.</h4>
+            <p>Sydnee Unions</p>
+            <div class="container-3-price">
+              <p><span>$290</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (09)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con-3img4.webp" />
+            <h3>2 - 6 hours &bull; Captain</h3>
+            <h4>Seaside Serenity Lake Union cruising.</h4>
+            <p>Ko Chang, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$200</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (23)
+              </p>
+            </div>
+          </div>
+
+          <div class="container-3-card">
+            <img src="/images/con3img5.webp" />
+            <h3>3 - 8 hours &bull; No Captain</h3>
+            <h4>Harbor Haven for Lake Union cruising.</h4>
+            <p>Ko Samui, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$210</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (18)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img6.webp" />
+            <h3>4 - 8 hours &bull; No Captain</h3>
+            <h4>Island Explorer for Lake Union cruising.</h4>
+            <p>Pattays City, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$190</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (15)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img7.webp" />
+            <h3>5 - 9 hours &bull; Captain</h3>
+            <h4>Perfect set up for Lake Union cruising.</h4>
+            <p>Pa Tong, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$240</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (19)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img8.webp" />
+            <h3>2 - 7 hours &bull; Captain</h3>
+            <h4>Coastal Cruisers Lake Union cruising.</h4>
+            <p>Phi Phi, Islands</p>
+            <div class="container-3-price">
+              <p><span>$170</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (15)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-4">
+        <div class="container-4-card">
+          <img src="/images/cont4bg.webp" alt="bgimage" />
+          <div class="container-4-content">
+            <h1>Your Care, Our Value</h1>
+            <p>
+              Find and book your dream boat through Yacht. Charter Fleet, the
+              world's leading luxury boat comparison site.
+            </p>
+            <a href="#">View Boats</a>
+          </div>
+        </div>
+      </section>
+      <section class="container-5">
+        <div class="container-5-title">
+          <div>
+            <h1>New Boat Rentals</h1>
+            <p>Unsatiable It Considered Invitation He Traveling Insensible.</p>
+          </div>
+          <div>
+            <a href="#">See More</a>
+          </div>
+        </div>
+        <div class="container-5-cards">
+          <div class="container-3-card">
+            <img src="/images/con3img5.webp" />
+            <h3>3 - 8 hours &bull; No Captain</h3>
+            <h4>Harbor Haven for Lake Union cruising.</h4>
+            <p>Ko Samui, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$210</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (18)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img6.webp" />
+            <h3>4 - 8 hours &bull; No Captain</h3>
+            <h4>Island Explorer for Lake Union cruising.</h4>
+            <p>Pattays City, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$190</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (15)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img7.webp" />
+            <h3>5 - 9 hours &bull; Captain</h3>
+            <h4>Perfect set up for Lake Union cruising.</h4>
+            <p>Pa Tong, Thailand</p>
+            <div class="container-3-price">
+              <p><span>$240</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (19)
+              </p>
+            </div>
+          </div>
+          <div class="container-3-card">
+            <img src="/images/con3img8.webp" />
+            <h3>2 - 7 hours &bull; Captain</h3>
+            <h4>Coastal Cruisers Lake Union cruising.</h4>
+            <p>Phi Phi, Islands</p>
+            <div class="container-3-price">
+              <p><span>$170</span> avg/day</p>
+              <p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i> (15)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-6">
+        <h1>Testimonial</h1>
+        <p>Unsatiable It Considered Invitation He Travelling Insensible.</p>
+        <div class="container-6-cards">
+          <div class="container-6-card">
+            <p>
+              “landing page after this template used e-commerce for your
+              branding site cannot believe we are able to use our most that.
+              OMG! I have got a brand new getting. I to make it cool.”
+            </p>
+            <hr />
+            <div class="container-6-div">
+              <div>
+                <h4>Lomm Patt.</h4>
+                <p>from Duisbarg</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-6-card">
+            <p>
+              “Use our most that I have got a brand this template used
+              e-commerce for your branding site cannot we are able to new
+              landing page after getting. I believe to make it cool. OMG!”
+            </p>
+            <hr />
+            <div class="container-6-div">
+              <div>
+                <h4>Charles Jhon</h4>
+                <p>from Duisbarg</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-6-card">
+            <p>
+              “Your branding site cannot we are able. Use our most that I have
+              got a brand this template used e-commerce. I believe to make it
+              cool. OMG! for to new landing page after getting.
+            </p>
+            <hr />
+            <div class="container-6-div">
+              <div>
+                <h4>Adam Osh</h4>
+                <p>from Duisbarg</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-6-card">
+            <p>
+              “A brand this template used e-commerce for your branding. Use our
+              most that I believe to make it cool. OMG!. I have got site cannot
+              we are able to new landing page after getting.”
+            </p>
+            <hr />
+            <div class="container-6-div">
+              <div>
+                <h4>Jhon Lee</h4>
+                <p>from Duisbarg</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-7">
+        <div>
+          <img src="/images/con7bg.webp" alt="boatcon7" />
+          <div class="container-7-content">
+            <div>
+              <h1>Subscribe and get exclusive deals & offer</h1>
+              <p>
+                Find and book your dream boat. The world's leading luxury boat
+                comparison site.
+              </p>
+              <div class="container-7-input">
+                <input type="email" placeholder="Your email address" />
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="container-8">
+        <div>
+          <p>Copyright © 2023 <span>RedQ Inc.</span> All Rights Reserved</p>
+        </div>
+        <div>
+          <ul>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Pricing</li>
+            <li>Help</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
