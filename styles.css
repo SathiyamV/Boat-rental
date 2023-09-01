@@ -85,7 +85,9 @@ header {
 main {
   padding: 0 1.5em;
 }
-
+.container-1{
+  margin-top: 5rem;
+}
 .container-1-images {
   display: flex;
 }
