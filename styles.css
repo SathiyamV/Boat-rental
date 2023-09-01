@@ -541,9 +541,41 @@ footer span {
   border: 1px solid gray;
   border-radius: 20px;
 } */
-.boat-brand-cards {
+.boat-brand-card-1,.boat-brand-card-2 {
   display: flex;
+  gap: 8px;
+}
+.boat-brand-cards{
+  display: flex;
+  flex-direction: column;
+  
 }
 .boat-brand-cards img {
-  width: 80px;
+  width: 70px;
+  height: 70px;
+  opacity: .7;
+}
+.boat-brand-card-1{
+  margin-top: 2rem;
+}
+.boat-brand-card{
+  border: 1px solid gray;
+  padding: .8rem;
+  border-radius: 20px;
+}
+
+.explore-range{
+  margin-top: 2rem;
+}
+.input-range input{
+  margin-top: 1rem;
+  width: 300px;
+  accent-color: black;
+}
+.explore-range-minmax{
+  display: flex;
+  justify-content: space-around;
+}
+.range-box{
+  padding: 1rem ;
 }
