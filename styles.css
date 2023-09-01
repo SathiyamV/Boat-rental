@@ -14,8 +14,7 @@ body {
   height: 100vh;
 }
 .header-2 {
-  padding: 2rem;
-  height: 100vh;
+  padding: 1rem 2rem;
 }
 .nav-container {
   display: flex;
@@ -123,6 +122,12 @@ body {
   background-color: black;
   padding: 1rem 9.3rem;
   border-radius: 10px;
+}
+.header-para {
+  margin-top: 4rem;
+}
+.header-para span {
+  font-weight: bold;
 }
 
 main {
@@ -475,4 +480,16 @@ footer span {
   footer ul {
     flex-direction: column;
   }
+}
+
+.explore-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 4rem 1rem;
+}
+
+.explore-container-3-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
