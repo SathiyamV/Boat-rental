@@ -71,7 +71,8 @@ body {
   color: white;
 }
 .nav-btn,
-.container-7-content a {
+.container-7-content a,
+.loadmore a {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -389,6 +390,19 @@ footer span {
     left: 0px;
     padding: 0.8rem;
   }
+  .explore-container-1-left {
+    display: none;
+  }
+  .explore-container-1{
+    grid-template-columns: 1fr ;
+  }
+}
+@media (min-width: 1270px){
+  .explore-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 4rem 1rem;
+  }
 }
 @media (max-width: 845px) {
   .nav-hamburger {
@@ -455,6 +469,7 @@ footer span {
   footer ul {
     justify-content: flex-end;
   }
+  
 }
 
 @media (max-width: 560px) {
@@ -482,11 +497,7 @@ footer span {
   }
 }
 
-.explore-container-1 {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  margin: 4rem 1rem;
-}
+
 
 .explore-container-3-cards {
   display: grid;
@@ -522,11 +533,9 @@ footer span {
   margin-top: 2rem;
 }
 .explore-cateogries-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.8rem;
   color: lightslategrey;
 }
+
 .explore-cateogries-card input {
   margin-left: 12rem;
   width: 50px;
@@ -541,41 +550,149 @@ footer span {
   border: 1px solid gray;
   border-radius: 20px;
 } */
-.boat-brand-card-1,.boat-brand-card-2 {
+.boat-brand-card-1,
+.boat-brand-card-2 {
   display: flex;
   gap: 8px;
 }
-.boat-brand-cards{
+.boat-brand-cards {
   display: flex;
   flex-direction: column;
-  
 }
 .boat-brand-cards img {
   width: 70px;
   height: 70px;
-  opacity: .7;
+  opacity: 0.7;
 }
-.boat-brand-card-1{
+.boat-brand-card-1 {
   margin-top: 2rem;
 }
-.boat-brand-card{
+.boat-brand-card {
   border: 1px solid gray;
-  padding: .8rem;
+  padding: 0.8rem;
   border-radius: 20px;
 }
 
-.explore-range{
+.explore-range,
+.explore-people {
   margin-top: 2rem;
 }
-.input-range input{
+.input-range input {
   margin-top: 1rem;
   width: 300px;
   accent-color: black;
 }
-.explore-range-minmax{
+.explore-range-minmax {
+  color: gray;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
-.range-box{
-  padding: 1rem ;
+.range-box {
+  padding: 1rem 5rem 1rem 1rem;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 2.2rem;
+}
+.explore-people {
+  display: flex;
+}
+.explore-people div,
+.explore-people span {
+  margin: 0 0.5rem;
+}
+
+.explore-people span {
+  padding: 0.4rem 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.explore-toggle {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.explore-toggle-title {
+  margin-left: 0.4rem;
+  margin-right: 10rem;
+}
+
+.explore-toggle-title-1 {
+  margin-left: 0.4rem;
+  margin-right: 6.5rem;
+}
+.loadmore {
+  text-align: center;
+  margin-left: 5rem;
+}
+.explore-footer {
+  margin: 3rem;
+}
+.explore-cateogries-card table tr {
+  margin-top: 40px;
+}
+
+/* Toggle button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
