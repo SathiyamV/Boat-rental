@@ -482,9 +482,6 @@ footer span {
   footer div {
     flex-direction: column;
   }
-  footer ul {
-    justify-content: flex-end;
-  }
   .explore-container-3-cards {
     grid-template-columns: 1fr 1fr;
   }
@@ -513,7 +510,7 @@ footer span {
   .container-3-price,
   .container-6-div,
   footer ul {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .logo-1 {
     width: 200px;
