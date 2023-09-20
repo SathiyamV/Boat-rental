@@ -592,6 +592,10 @@ footer span {
   .container-4-card img {
     aspect-ratio: 18/15;
   }
+  .container-3-title,.container-5-title{
+    flex-direction: column;
+    align-items: center;
+  }
   .container-3-cards,
   .container-5-cards,
   .container-6-cards {
@@ -800,6 +804,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 
 /* javascript implements */
 .container-1-expandingcards-body {
